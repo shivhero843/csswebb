@@ -1,0 +1,210 @@
+body,h1,h3,h4,p,ul,li,form,input,textarea{
+    
+    list-style: none;
+}
+
+body{
+    margin:0px;
+    font-family:Arial, sans-serif;
+    padding:0px;
+    box-sizing: border-box;
+    background-color:white;
+}
+
+
+.logo{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:1 1 7px;
+}
+.logo img{
+     width:220px;
+     height:110px;
+    
+}
+.logo img:hover{
+transform: scale(1.1);
+}
+
+nav ul li a{
+
+      font-weight:bold;
+}
+
+nav{
+    margin: auto;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+     margin:10px;
+}
+
+nav ul a:hover{
+    background-color:goldenrod;
+}
+
+
+nav ul a{
+
+     text-decoration:none;
+     display:inline;
+     padding:9px 19px;
+     background-color: blue;
+     color:white;
+     border-radius:6px;
+     transition: background-color 0.4s;
+}
+
+h1{
+    text-align:center;
+    margin:20px 0;
+}
+
+.buy{
+     transition: background-color 0.4s;
+}
+.add-cart{
+     transition: background-color 0.4s;
+}
+.featured img{
+     border-radius:10px;
+     border: 3px solid rgba(1, 0.2, 2, 0.1);
+}
+
+.buy:hover{
+    background:green;
+    transform: scale(1.1);
+}
+.add-cart:hover{
+    background:red;
+  transform: scale(1.1);
+}
+
+.btn{
+     display:inline;
+     padding:9px 19px;
+     background-color: blue;
+     color: white;
+     text-decoration: none;
+     border-radius:6px;
+     transition: background-color 0.4s;
+}
+nav ul li{
+     border-radius:8px;
+     border-radius:5px solid black;
+}
+
+.btn:hover{
+    background-color:red;
+}
+footer a:hover{
+     transform: scale(1.1);
+}
+
+.featured{
+     justify-content: center;
+     background-color: rgba(1, 0.2, 2, 0.1);
+
+}
+.select{
+     padding:15px;
+     margin: 15px;
+}
+.row{
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     justify-content:center;
+}
+.col-3{
+     flex: 0 0 30%;
+     box-sizing: border-box;
+     margin:15px ;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+}
+.specification{
+     text-align:left;
+}
+img{
+     border-radius:6px;
+}
+
+
+.social-media ul{
+ list-style: none;
+ padding:0px;
+}
+
+.social-media ul li{
+     display:inline;
+      margin:0 10px;
+}
+
+
+.social-media img{
+     width:50px;
+     height:40px;
+     display:flex;
+     transition:background-color 0.4s;
+}
+.social-media a img:hover{
+     transform: scale(1.4);
+}
+
+.lastpart {
+     margin:auto;
+     padding:5px;
+     text-align:center;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media, .lastpart {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+}
